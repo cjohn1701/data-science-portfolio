@@ -1,4 +1,9 @@
 # Blog 1 
-What is Data Science to Me?
+Why does learning data science in social and interdisciplinary contexts matter?
 
-Write your reflection here.
+(1) Why model social topics and people? 
+    Without people, there is no data. It is difficult to engage with the study of data science without people and interdisciplinary contexts. Even when creating data artificially, it is still based upon previously observed human patterns. This world is run by people. It is helpful to try and understand how people think and operate in order to better predict future actions. Additionally, using interdisciplinary contexts in data science helps us learn more about the behavior occurring in our world outside of our every day encounters. This better connects our world and gives everyone something in common according to the data that is collected about everybody.
+(2) At this point, what responsibilities can you think of that come with using data about people?
+    When using data about people, it is essential to be ethical about it. One main responsibility about dealing with this data is making sure not to alter the data to promote bias. The data should be a true reflection of the statistics that were collected, even if there is data that is incomplete or missing. Additionally, data related to people is able to be used for a multitude of reasons. A major responsibility that I will hold myself to is to not use personal data for malicious intent. For example, websites that offer up personal information such as addresses and phone numbers for profit are not always considered ethical. 
+(3) What are you hoping to better understand through this course?
+    The main concept I am hoping to better understand through this course is how to use Python efficiently in evaluating and sorting data. During Studio I, I thought it was very interesting to also take the ethics of decisions into consideration. With the stadium project, it was intriguing to consider other factors such as transportation, tourism, and sustainability when they are all topics that I normally would not have considered. Additionally, learning about the real life application of data science in social contexts is engaging to me since I tend to think on the sports analytics side of situations rather than the data science side.
