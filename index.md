@@ -8,6 +8,7 @@ This website will document my learning and projects throughout the semester.
 I am a junior planning to graduate in Spring '28. I am currently the Head of Analytics for the UNC Charlotte Ice Hockey team, returning for my second year with the team for the 2026-27 season. During the summer of 2026, I worked for the High Point Rockers with the pitching staff using Trackman to enhance player performance.
 
 [Resume](Resume-2026.pdf)
+[LinkedIn](https://www.linkedin.com/in/caroline-johnson-869b0a26b/)
 
 ---
 ## Portfolio
