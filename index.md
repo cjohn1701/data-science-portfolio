@@ -12,6 +12,7 @@ Originally from Arkansas before moving to North Carolina in 2024, I have always 
 In 2024, I worked with the Wilkes County Moonshiners to use Blast Motion and ArmCare technologies to track and improve player performance. This experience helped me land an internship with the High Point Rockers, a partner league of the MLB. I worked with former MLB players and players that went on to play in the MLB and MiLB in the 2026 season after having their contracts bought out. I used Trackman technologies to learn pitch types and how to associate certain metrics with specific players based on their tendencies. While it is a career goal of mine to work specifically in baseball, I also have experience working in hockey. As the Head of Analytics for the UNC Charlotte Ice Hockey team, I work closely with players on a weekly players to assess shots and defensive strategies. This is my second year with the team after being an intern for the 2025-26 season. I am open to gaining experience in other sports, such as basketball and football.
 
 [Resume](Resume-2026.pdf)
+
 [LinkedIn](https://www.linkedin.com/in/caroline-johnson-869b0a26b/)
 
 ---
