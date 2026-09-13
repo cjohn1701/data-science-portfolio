@@ -16,6 +16,8 @@ While there are a lot of interesting variables being transmitted when running th
 
 <img width="646" height="526" alt="Image" src="https://github.com/user-attachments/assets/bb3142fb-328d-414e-9d37-9633c7163e4f" />
 
+<img width="668" height="546" alt="Image" src="https://github.com/user-attachments/assets/cb1630dc-0951-4274-812f-a03751e05c7c" />
+
 In the two scatter plots, there are opposite patterns occurring. For the first scatter plot, which shows batting average vs RBIs, there is a negative trend. Meanwhile, the scatter plot for home runs vs RBIs shows a positive trend. The third plot, which is a heatmap comparing batting average, home runs, RBI, and their correlation, supports that lines of best fit that were produced from the scatter plots. Based on this, the graphs show that home runs were statistically more likely to predict RBI count in 2025 as opposed to batting average. Considering sports are not always able to be soundly predicted, there will naturally be a few outliers because of the human performance aspect. The graph that I notice the most anomalies in is the batting average vs RBI scatter plot. There is a player towards the upper right corner, which can be identified as Aaron Judge of the New York Yankees. Despite this graph showing a negative line of best fit, the location of the player is very far from the confidence interval and even has the potential to be within a confidence interval if the trend was positive. This opens the possibility of individual cases of how human performance reflects results, and questions what may be behind why some players are so far from their counterparts.
 
 ## Storytelling and Narrative:
