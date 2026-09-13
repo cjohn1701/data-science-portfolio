@@ -20,7 +20,9 @@ In the two scatter plots, there are opposite patterns occurring. For the first s
 
 ## Code and AI Transparency:
 Jupyter Notebook:
+
 Dataset/API: [MLB-StatsAPI](https://pypi.org/project/MLB-StatsAPI/)
+
 No AI was used on this project. Any code was tweaked through either the MLB-StatsAPI Wiki GitHub page, or various documentation websites to help with syntax and visual customization.
 
 ## Key Academic References:
