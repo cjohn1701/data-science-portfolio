@@ -64,24 +64,24 @@ While there are a lot of interesting variables being transmitted when running th
 <img width="851" height="546" alt="Image" src="https://github.com/user-attachments/assets/7a3b1b01-b7cb-468e-b9eb-8faef2e72b62" />  
 
 **Batting Average vs RBI**  
-This is a scatter plot that shows the relationship between batting average and Runs Batted In.
+This is a scatter plot that shows the relationship between batting average and Runs Batted In. Each blue dot on the visualization represents a unique player that was pulled from the DataFrame. The red line represents the regression line, while the red shaded area represents the 95% confidence interval associated with the best-fit line. According to the graph, there is a negative correlation between the two variables.
 
 <img width="851" height="546" alt="Image" src="https://github.com/user-attachments/assets/558dd2ae-8524-44ca-ba52-ec4171eb30b1" />  
 
 **Home Runs vs RBI**  
-This is a scatter plot that shows the relationship between home runs and Runs Batted In.
+This is a scatter plot that shows the relationship between home runs and Runs Batted In. Each blue dot on the visualization represents a unique player that was pulled from the DataFrame. The red line represents the regression line, while the red shaded area represents the 95% confidence interval associated with the best-fit line. According to the graph, there is a positive correlation between the two variables.
 
 <img width="646" height="526" alt="Image" src="https://github.com/user-attachments/assets/bb3142fb-328d-414e-9d37-9633c7163e4f" />  
 
 **Correlation Between AVG, HR, RBI**  
-This is a heat map that shows the correlations between batting average, home runs, and Runs Batted In.
+This is a heat map that shows the correlations between batting average, home runs, and Runs Batted In. The more correlated two variables are, the square relating the variables will appear more red. The less correlated two variables, the square relating the variables will appear more blue. This visualization supports the trends being shown by the two scatter plots. The square that shows the numerical correlation between batting average and RBIs is blue and prints a negative number, implying negative correlation. Meanwhile, the square that shows the numerical correlation between home runs and RBIs is red and prints a positive number, implying positive correlation.
 
 <img width="668" height="546" alt="Image" src="https://github.com/user-attachments/assets/cb1630dc-0951-4274-812f-a03751e05c7c" />  
 
 **Batting Average vs Home Runs**  
-This is a hexbin plot that shows player distribution base off of batting average and home run totals.
+This is a hexbin plot that shows player distribution based off of batting average and home run totals. The graph is colorized by player density, implying that a bin with a darker square holds more player value than the lighter colored bins. This graph has the darkest bin in a region of high batting average and low home runs. Therefore, this suggests that having a higher batting average does not mean that a player is going to hit more home runs, which ties back into the earlier visualizations by suggesting that players in this category are less likely to have high RBI totals. 
 
-In the two scatter plots, there are opposite patterns occurring. For the first scatter plot, which shows batting average vs RBIs, there is a negative trend. Meanwhile, the scatter plot for home runs vs RBIs shows a positive trend. The third plot, which is a heatmap comparing batting average, home runs, RBI, and their correlation, supports that lines of best fit that were produced from the scatter plots. Based on this, the graphs show that home runs were statistically more likely to predict RBI count in 2025 as opposed to batting average. Considering sports are not always able to be soundly predicted, there will naturally be a few outliers because of the human performance aspect. The graph that I notice the most anomalies in is the batting average vs RBI scatter plot. There is a player towards the upper right corner, which can be identified as Aaron Judge of the New York Yankees. Despite this graph showing a negative line of best fit, the location of the player is very far from the confidence interval and even has the potential to be within a confidence interval if the trend was positive. This opens the possibility of individual cases of how human performance reflects results, and questions what may be behind why some players are so far from their counterparts.
+Based on the visualizations, the graphs show that home runs were statistically more likely to predict RBI count in 2025 as opposed to batting average. Considering sports are not always able to be soundly predicted, there will naturally be a few outliers because of the human performance aspect. The graph that I notice the most anomalies in is the batting average vs RBI scatter plot. There is a player towards the upper right corner, which can be identified as Aaron Judge of the New York Yankees. Despite this graph showing a negative line of best fit, the location of the player is very far from the confidence interval and even has the potential to be within a confidence interval if the trend was positive. This opens the possibility of individual cases of how human performance reflects results, and questions what may be behind why some players are so far from their counterparts.
 
 ## Storytelling and Narrative:
 To relate these graphics back to the original research question, there is evidence to draw a conclusion that there is more correlation between home runs and RBIs than batting average and RBIs. With the graphs producing a conclusion that home runs have a more positive correlation with RBIs than batting average does, this relates back to our research question drawing a conclusion that home runs had more influence on RBI count than batting average in the year 2025. The data is attempting to tell the story that home runs have a stronger correlation towards RBI than batting average does towards RBI production. Though, it would be incorrect to draw a conclusion that home run total is the only variable that contributes to RBI count. This research question takes into account only batting average and home runs, and assuming that there are no other possible variables that can play a role would be an incorrect assumption. Therefore, the results of the research can only say that home runs have a positive correlation with earning RBIs.
@@ -93,7 +93,7 @@ One of the main details this dataset fails to capture is the typical spot in the
 ## Code and AI Transparency:
 Jupyter Notebook:  
 Dataset/API: [MLB-StatsAPI](https://pypi.org/project/MLB-StatsAPI/)  
-No AI was used on this project. Any Python code or GitHub code was tweaked through either the MLB-StatsAPI Wiki GitHub page, YouTube tutorials, or various documentation websites to help with syntax and visual customization.
+No AI was used on this project. Any Python code or GitHub code was tweaked through either the [MLB-StatsAPI Wiki GitHub page](https://github.com/toddrob99/MLB-StatsAPI/wiki), YouTube tutorials, or various documentation websites to help with syntax and visual customization.
 
 ## Key Academic References:
 
