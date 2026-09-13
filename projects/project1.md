@@ -64,12 +64,12 @@ While there are a lot of interesting variables being transmitted when running th
 <img width="851" height="546" alt="Image" src="https://github.com/user-attachments/assets/7a3b1b01-b7cb-468e-b9eb-8faef2e72b62" />  
 
 **Batting Average vs RBI**  
-This is a scatter plot that shows the relationship between batting average and Runs Batted In. Each blue dot on the visualization represents a unique player that was pulled from the DataFrame. The red line represents the regression line, while the red shaded area represents the 95% confidence interval associated with the best-fit line. According to the graph, there is a negative correlation between the two variables.
+This is a scatter plot that shows the relationship between batting average and Runs Batted In. Each blue dot on the visualization represents a unique player that was pulled from the DataFrame. The red line represents the regression line, while the red shaded area represents the 95% confidence interval associated with the best-fit line. According to the graph, there is a negative correlation between the two variables. This suggests that having a higher batting average does not directly translate toward having a higher RBI total.
 
 <img width="851" height="546" alt="Image" src="https://github.com/user-attachments/assets/558dd2ae-8524-44ca-ba52-ec4171eb30b1" />  
 
 **Home Runs vs RBI**  
-This is a scatter plot that shows the relationship between home runs and Runs Batted In. Each blue dot on the visualization represents a unique player that was pulled from the DataFrame. The red line represents the regression line, while the red shaded area represents the 95% confidence interval associated with the best-fit line. According to the graph, there is a positive correlation between the two variables.
+This is a scatter plot that shows the relationship between home runs and Runs Batted In. Each blue dot on the visualization represents a unique player that was pulled from the DataFrame. The red line represents the regression line, while the red shaded area represents the 95% confidence interval associated with the best-fit line. According to the graph, there is a positive correlation between the two variables. This suggests that having a higher home run total does directly translate toward having a higher RBI total.
 
 <img width="646" height="526" alt="Image" src="https://github.com/user-attachments/assets/bb3142fb-328d-414e-9d37-9633c7163e4f" />  
 
@@ -93,7 +93,8 @@ One of the main details this dataset fails to capture is the typical spot in the
 ## Code and AI Transparency:
 Jupyter Notebook: [Project1.html](Project1.html)  
 Dataset/API: [MLB-StatsAPI](https://pypi.org/project/MLB-StatsAPI/)  
-No AI was used on this project. Any Python code or GitHub code was tweaked through either the [MLB-StatsAPI Wiki GitHub page](https://github.com/toddrob99/MLB-StatsAPI/wiki), YouTube tutorials, or various documentation websites to help with syntax and visual customization.
+No AI was used on this project. Any Python code or GitHub code was tweaked through either the [MLB-StatsAPI Wiki GitHub page](https://github.com/toddrob99/MLB-StatsAPI/wiki), YouTube tutorials, or various documentation websites to help with syntax and visual customization.  
+To identify what players to use for this research question, I used Baseball-Reference.com's list of [2025 Major League Baseball Batting Leaders](https://www.baseball-reference.com/leagues/majors/2025-batting-leaders.shtml).
 
 ## Key Academic References:
 
