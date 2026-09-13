@@ -60,13 +60,25 @@ print(df)
 While there are a lot of interesting variables being transmitted when running the statsapi.player_stat_data code, this research question only involves three variables. Therefore, I created a DataFrame using pandas that only picked out the player’s name, batting average, home run total, and RBI total. This puts the information into a more presentable and readable format that specifically highlights only the variables that are most important to the question. Thankfully, there were no missing values in the dataset, so I did not have to deal with cleaning up nonexistent values. The main way I was able to filter data was by locating what a player’s ID was for the specific list of players I was looking for and pulling their average, home runs, and RBIs. These steps made all of the data I was being presented with less overwhelming, allowing me to focus on only what was relevant to the research question.
 
 ## Visualizations:
-<img width="851" height="546" alt="Image" src="https://github.com/user-attachments/assets/7a3b1b01-b7cb-468e-b9eb-8faef2e72b62" />
+<img width="851" height="546" alt="Image" src="https://github.com/user-attachments/assets/7a3b1b01-b7cb-468e-b9eb-8faef2e72b62" />  
 
-<img width="851" height="546" alt="Image" src="https://github.com/user-attachments/assets/558dd2ae-8524-44ca-ba52-ec4171eb30b1" />
+**Batting Average vs RBI**  
+This is a scatter plot that shows the relationship between batting average and Runs Batted In.
 
-<img width="646" height="526" alt="Image" src="https://github.com/user-attachments/assets/bb3142fb-328d-414e-9d37-9633c7163e4f" />
+<img width="851" height="546" alt="Image" src="https://github.com/user-attachments/assets/558dd2ae-8524-44ca-ba52-ec4171eb30b1" />  
 
-<img width="668" height="546" alt="Image" src="https://github.com/user-attachments/assets/cb1630dc-0951-4274-812f-a03751e05c7c" />
+**Home Runs vs RBI**  
+This is a scatter plot that shows the relationship between home runs and Runs Batted In.
+
+<img width="646" height="526" alt="Image" src="https://github.com/user-attachments/assets/bb3142fb-328d-414e-9d37-9633c7163e4f" />  
+
+**Correlation Between AVG, HR, RBI**  
+This is a heat map that shows the correlations between batting average, home runs, and Runs Batted In.
+
+<img width="668" height="546" alt="Image" src="https://github.com/user-attachments/assets/cb1630dc-0951-4274-812f-a03751e05c7c" />  
+
+**Batting Average vs Home Runs**  
+This is a hexbin plot that shows player distribution base off of batting average and home run totals.
 
 In the two scatter plots, there are opposite patterns occurring. For the first scatter plot, which shows batting average vs RBIs, there is a negative trend. Meanwhile, the scatter plot for home runs vs RBIs shows a positive trend. The third plot, which is a heatmap comparing batting average, home runs, RBI, and their correlation, supports that lines of best fit that were produced from the scatter plots. Based on this, the graphs show that home runs were statistically more likely to predict RBI count in 2025 as opposed to batting average. Considering sports are not always able to be soundly predicted, there will naturally be a few outliers because of the human performance aspect. The graph that I notice the most anomalies in is the batting average vs RBI scatter plot. There is a player towards the upper right corner, which can be identified as Aaron Judge of the New York Yankees. Despite this graph showing a negative line of best fit, the location of the player is very far from the confidence interval and even has the potential to be within a confidence interval if the trend was positive. This opens the possibility of individual cases of how human performance reflects results, and questions what may be behind why some players are so far from their counterparts.
 
@@ -78,10 +90,8 @@ To relate these graphics back to the original research question, there is eviden
 One of the main details this dataset fails to capture is the typical spot in the order for each batter involved in this research question. This is an aspect of the game of baseball that cannot be whittled down to a singular number like batting average can. Lineup orders can greatly affect all of the variables related to this research question depending on who is batting ahead of the specific players. I believe that this dataset naturally holds a slight bias based on the selection of players themselves. Out of the 6 divisional leaders in 2025, 5 of those teams are represented by players chosen for the dataset. Naturally, teams that lead the league in wins are more likely to have higher amounts of runs and RBIs across their players because that translates to outscoring the opponent. It is possible that the teams have a larger influence on player performance than the numbers are able to reveal. If I had more time, I would love to add more variables to the research question such as slugging and see if there are further relationships behind how to predict what causes players to have high RBI counts at the end of a season. Additionally, if there was a way to add non tangibles into the equation, such as batting order, I would have loved to incorporate that. For example, most of these players typically bat in the top half of the order, and I would like to see if there is a specific spot, such as cleanup or 4th, that typically drives in more RBI than other spots in the order.
 
 ## Code and AI Transparency:
-Jupyter Notebook:
-
-Dataset/API: [MLB-StatsAPI](https://pypi.org/project/MLB-StatsAPI/)
-
+Jupyter Notebook:  
+Dataset/API: [MLB-StatsAPI](https://pypi.org/project/MLB-StatsAPI/)  
 No AI was used on this project. Any Python code or GitHub code was tweaked through either the MLB-StatsAPI Wiki GitHub page, YouTube tutorials, or various documentation websites to help with syntax and visual customization.
 
 ## Key Academic References:
