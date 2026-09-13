@@ -30,7 +30,7 @@ Jupyter Notebook:
 
 Dataset/API: [MLB-StatsAPI](https://pypi.org/project/MLB-StatsAPI/)
 
-No AI was used on this project. Any code was tweaked through either the MLB-StatsAPI Wiki GitHub page, or various documentation websites to help with syntax and visual customization.
+No AI was used on this project. Any Python code or GitHub code was tweaked through either the MLB-StatsAPI Wiki GitHub page, YouTube tutorials, or various documentation websites to help with syntax and visual customization.
 
 ## Key Academic References:
 
