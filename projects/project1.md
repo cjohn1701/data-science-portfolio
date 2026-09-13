@@ -7,6 +7,56 @@ This research question specifically applies to Major League Baseball, a sport th
 The key variables I am using for this project are batting average, home run total, and runs batted in. Batting average is calculated by Hits/At-Bats. Hits include singles, doubles, triples, and home runs. An at-bat is a plate appearance that results in either a hit or an out. The home run total focuses only on how many home runs a player hit in a season. A home run is classified as a hit that is launched out of the park and is awarded four bases. Runs batted in (RBI) is a statistic that measures how many times a player’s at bat results in a runner on base scoring, or also including the batter himself scoring if the result is a home run. This research question focuses on studying if RBI is more predictable through batting average or home run totals. All three of these variables go into winning MLB’s Triple Crown for batters, and this question can also predict who may end up winning a triple crown. The dataset is being provided through the API [MLB-StatsAPI](https://pypi.org/project/MLB-StatsAPI/) by toddrob99 on GitHub. Each row in my dataset represents a player that was either top 10 in batting average, home runs, and/or RBI during the 2026 season. Each row lists the player’s name, batting average, home run total, and RBI total. These variables are listed across all players regardless of where they ranked in all categories. I have the list sorted by last name for visual convenience. The original dataset I pulled from with MLB-StatsAPI was initially very large and included more statistics than I really needed for this research question. Originally, I ran into a problem that statsapi.player_stats was not paying attention to the season input that I was giving. I solved this by using statsapi.player_stat_data instead, and used data from that function instead to pull the variables that I needed for my research question.
 
 ## Data Cleaning and Preparation:
+```
+players = {
+    'Jo Adell': 666176,
+    'Pete Alonso': 624413,
+    'Bo Bichette': 666182,
+    'Junior Caminero': 691406,
+    'Rafael Devers': 646240,
+    'Yandy Díaz': 650490,
+    'Freddie Freeman': 518692,
+    'Riley Greene': 682985,
+    'Nico Hoerner': 663538,
+    'Aaron Judge': 592450,
+    'Nick Kurtz': 701762,
+    'Shohei Ohtani': 660271,
+    'Vinnie Pasquantino': 686469,
+    'Jeremy Peña': 665161,
+    'Cal Raleigh': 663728,
+    'Kyle Schwarber': 656941,
+    'Juan Soto': 665742,
+    'George Springer': 543807,
+    'Eugenio Suárez': 553993,
+    'Trea Turner': 607208,
+    'Taylor Ward': 621493,
+    'Jacob Wilson': 805779,
+    'Bobby Witt Jr.': 677951
+}
+
+data = []
+
+for name, player_id in players.items():
+    stats = statsapi.player_stat_data(
+        personId=player_id,
+        group="hitting",
+        type="season",
+        season=2025
+    )
+
+    stat = stats['stats'][0]['stats']
+
+    data.append({
+        'Player': name,
+        'AVG': float(stat['avg']),
+        'Home Runs': stat['homeRuns'],
+        'RBI': stat['rbi']
+    })
+
+df = pd.DataFrame(data)
+
+print(df)
+```
 While there are a lot of interesting variables being transmitted when running the statsapi.player_stat_data code, this research question only involves three variables. Therefore, I created a DataFrame using pandas that only picked out the player’s name, batting average, home run total, and RBI total. This puts the information into a more presentable and readable format that specifically highlights only the variables that are most important to the question. Thankfully, there were no missing values in the dataset, so I did not have to deal with cleaning up nonexistent values. The main way I was able to filter data was by locating what a player’s ID was for the specific list of players I was looking for and pulling their average, home runs, and RBIs. These steps made all of the data I was being presented with less overwhelming, allowing me to focus on only what was relevant to the research question.
 
 ## Visualizations:
