@@ -97,4 +97,7 @@ No AI was used on this project. Any Python code or GitHub code was tweaked throu
 To identify what players to use for this research question, I used Baseball-Reference.com's list of [2025 Major League Baseball Batting Leaders](https://www.baseball-reference.com/leagues/majors/2025-batting-leaders.shtml).
 
 ## Key Academic References:
-
+Clark, J. T. (2016). Regression Analysis of Success in Major League Baseball.  
+Green, B. Analyzing MLB Player Positions & Offensive Statistics.  
+McIntosh, J. (2025). Analyzing the Evolution of Major League Baseball Hitting Strategies (1950–2010): A Machine Learning and Interactive Dashboard Approach.  
+Schaeffer, A. G. (2025). Using Simulation to Optimize Batting Lineups in Major League Baseball. North Carolina State University.
