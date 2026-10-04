@@ -20,12 +20,14 @@ df_clean = df_clean.replace('ND', np.nan)
 df_clean = df_clean.apply(pd.to_numeric)
 
 df_clean = df_clean.dropna()
-```
+```  
+While the dataset claims to have been cleaned for data analysis, I had come across problems of missing values and had to further clean the data for my own analysis.
 
 ## Baseline and Model Development:
 To establish a baseline for this project, I started by creating an OLS model to see values such as co-efficients and R^2 values. It is appropriate to use a baseline in machine learning to see how the complexity shifts the model. OLS is one of the most simplistic forms of machine learning, which makes seeing this complexity easier. To answer my research question, I used linear regression and ridge regression. These models were appropriate because these forms of regression models handle multiple variables very well. Additionally, this research question allows for the chance of multicollinearity, which regression models handle better than some other models. To my knowledge, I do not believe that I tuned any model settings or hyperparameters based on the sklearn documentations I used for this project. To assure that the models were compared fairly, I pulled the same result metrics, such as the R^2 value, for both models to see if there was any differentiation between the two.
 
 ## Model Evaluation and Selection:
+To evaluate the models, I compared the two model’s final results to each other and the baseline OLS model. Specifically, the R^2 value, mean squared error, variable coefficients, and intercept are the values I found capable of being compared across all of the forms of machine learning.
 
 ## Model Interpretation and Insights:
 
