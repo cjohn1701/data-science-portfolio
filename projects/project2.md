@@ -50,6 +50,10 @@ This project and dataset is revolved around MLB and umpiring, which means that t
 ## Code and Transparency:
 Jupyter Notebook: Project2.html  
 Dataset: [MLB Baseball Umpire Scorecards (2015 - 2022)](https://www.kaggle.com/datasets/mattop/mlb-baseball-umpire-scorecards-2015-2022)  
+Documentation: [scikit-learn One Hot Encoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)  
+Documentation: [scikit-learn Linear Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)  
+Documentation: [scikit-learn Ridge Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html)  
+No AI was used on this project. Any Python code or GitHub code was tweaked through either YouTube tutorials or various documentation websites to help with syntax and visual customization.
 
 ## Key Academic References:
 Fesselmeyer, E. (2021). The impact of temperature on labor quality: Umpire accuracy in Major League Baseball. Southern Economic Journal, 88(2), 545-567.  
