@@ -32,6 +32,17 @@ To establish a baseline for this project, I started by creating an OLS model to 
 To evaluate the models, I compared the two model’s final results to each other and the baseline OLS model. Specifically, the R^2 value, mean squared error, variable coefficients, and intercept are the values I found capable of being compared across all of the forms of machine learning.
 
 ## Model Interpretation and Insights:
+<img width="687" height="546" alt="Image" src="https://github.com/user-attachments/assets/b32ec33b-4808-4b6e-b5c8-f7b2d23737bc" />  
+
+**Expected Incorrect Calls vs. Incorrect Calls**  
+This is a scatter map that shows a line of best fit for expected incorrect calls compared to actual incorrect calls.  
+
+<img width="699" height="546" alt="Image" src="https://github.com/user-attachments/assets/428424b9-c63d-4655-8946-06ec5cc0f9ec" />  
+
+**Ridge Regression Prediction Error**  
+This is a scatter plot that shows predicted incorrect calls and its actual preiction error.  
+
+.
 
 ## Limitations, Ethics, and Reflection:
 This project and dataset is revolved around MLB and umpiring, which means that this is human influenced data. Therefore, there will never be a 100% certainty in recreating nor predicting the absolute outcomes of data. This can create a gap or bias between what the model thinks should occur and what the human influencing the data is actually experiencing. Similar to who would be affected by the model in general, MLB teams and league offices would be impacted by incorrect predictions. Incorrect predictions can end up translating into poor performances and invalid game preparations. In result, this could mean the difference between wins and losses. False positives and false negatives translate to strikes called balls and balls called strikes. With this dataset, there is a category for expected incorrect calls, but there is no further specification on that metric. With more variables and fine tuning, I could see this model being appropriate for real-world decision-making. Even with ABS challenges available, it is helpful to teams in advance to know the consistency of the umpire behind them. While working on this project, the Atlanta Braves vs Los Angeles Dodgers NLCS Game 1 was on. The umpire had an exaggerated zone that I believe a model like this could have prepared the teams on knowing how many calls this umpire may miss and how often they may expect to exercise their ABS challenges. I would love to find more variables to expand this model with, such as how weather and stadium layouts affect umpire performance. While I believe that the two forms of regression that I chose for this project are the best forms of modeling, I think trying other forms of machine learning would have been interesting to see the evaluation impact. Users should understand that this model is not currently absolute. Therefore, there is still a lot of room for error in the model.  
