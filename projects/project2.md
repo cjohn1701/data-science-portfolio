@@ -12,6 +12,15 @@ The dataset comes from [MLB Baseball Umpire Scorecards (2015 - 2022)](https://ww
 ## Data Understanding and Exploration:
 
 ## Data Preparation and Feature Selection:
+```
+cols = ['home_team_runs', 'away_team_runs', 'incorrect_calls', 'expected_incorrect_calls']
+df_clean = df[cols].copy()
+
+df_clean = df_clean.replace('ND', np.nan)
+df_clean = df_clean.apply(pd.to_numeric)
+
+df_clean = df_clean.dropna()
+```
 
 ## Baseline and Model Development:
 
