@@ -23,6 +23,7 @@ df_clean = df_clean.dropna()
 ```
 
 ## Baseline and Model Development:
+To establish a baseline for this project, I started by creating an OLS model to see values such as co-efficients and R^2 values. It is appropriate to use a baseline in machine learning to see how the complexity shifts the model. OLS is one of the most simplistic forms of machine learning, which makes seeing this complexity easier. To answer my research question, I used linear regression and ridge regression. These models were appropriate because these forms of regression models handle multiple variables very well. Additionally, this research question allows for the chance of multicollinearity, which regression models handle better than some other models. To my knowledge, I do not believe that I tuned any model settings or hyperparameters based on the sklearn documentations I used for this project. To assure that the models were compared fairly, I pulled the same result metrics, such as the R^2 value, for both models to see if there was any differentiation between the two.
 
 ## Model Evaluation and Selection:
 
