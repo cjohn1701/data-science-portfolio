@@ -13,15 +13,17 @@ The dataset comes from [MLB Baseball Umpire Scorecards (2015 - 2022)](https://ww
 
 ## Data Preparation and Feature Selection:
 ```
+# Cleaning dataset
 cols = ['home_team_runs', 'away_team_runs', 'incorrect_calls', 'expected_incorrect_calls']
 df_clean = df[cols].copy()
 
+# Fix "could not convert string to float: 'ND'" error when trying to confirm that columns can be read as floats
 df_clean = df_clean.replace('ND', np.nan)
 df_clean = df_clean.apply(pd.to_numeric)
 
 df_clean = df_clean.dropna()
 ```  
-While the dataset claims to have been cleaned for data analysis, I had come across problems of missing values and had to further clean the data for my own analysis.
+While the dataset claims to have been cleaned for data analysis, I had come across problems of missing values and had to further clean the data for my own analysis. I had originally attempted to use all of the variables that were available to me. Next, I limited that variable usage to what I believed would be most valuable. Despite these two attempts, my OLS regression model appeared to be abnormal, so I cut my features down even more until I could get it to a point where the numbers seemed more acceptable for the time being. Initially, I had attempted to use one-hot encoding to account for any categorical variables that I wanted to include in this project. I had three different phases for separating my data. I had the raw dataset, a cleaned dataset, and an encoded dataset. To prevent data leakage, I focused only on the dataset at hand and limited any outside interference. Additionally, I realized that some of the variables are either too similar or counteract each other, so I cut down my variable usage from my first OLS model to prevent this and data leakage.
 
 ## Baseline and Model Development:
 To establish a baseline for this project, I started by creating an OLS model to see values such as co-efficients and R^2 values. It is appropriate to use a baseline in machine learning to see how the complexity shifts the model. OLS is one of the most simplistic forms of machine learning, which makes seeing this complexity easier. To answer my research question, I used linear regression and ridge regression. These models were appropriate because these forms of regression models handle multiple variables very well. Additionally, this research question allows for the chance of multicollinearity, which regression models handle better than some other models. To my knowledge, I do not believe that I tuned any model settings or hyperparameters based on the sklearn documentations I used for this project. To assure that the models were compared fairly, I pulled the same result metrics, such as the R^2 value, for both models to see if there was any differentiation between the two.
